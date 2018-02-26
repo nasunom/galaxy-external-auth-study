@@ -1,4 +1,4 @@
-# Galaxy で外部ユーザ認証する
+# Galaxy の外部ユーザ認証機能を利用する
 
 ## Galaxy 設定
 
@@ -31,7 +31,7 @@ Nginx を Reverse Proxy として使用し、Basic 認証する方式を検証�
 test01@example.com:*****
 ```
 
-## Galaxy の外部ユーザ認証機能
+## Galaxy の外部ユーザ認証機能について
 
 - Nginxによる Reverse Proxy が `REMOTE_USER` の HTTP ヘッダを付けて
   Galaxy にリクエストすると、Galaxy は認証ユーザとしてそれを認識する仕組みが備わっている。
@@ -61,4 +61,12 @@ test01@example.com:*****
 
 ## TODO
 
-- SAML ベースの SSO で認証する外部サービスと連携可能な SP を認証Proxyとして使えるか？
+- 認証Proxy を SAML ベースの SSO で認証する外部サービスと連携可能な SP として構築して使えるか？
+
+
+## Reference
+
+https://galaxyproject.org/admin/config/nginx-external-user-auth/  
+
+https://galaxyproject.org/admin/config/external-user-auth/
+
